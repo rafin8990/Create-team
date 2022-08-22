@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black">
-    <header class="mt-10">
+    <header class=" py-28">
         <div>
             <h1 class="text-6xl text-white font-bold text-center">Welcome To Cricket Club</h1>
         <h2 class="text-4xl text-white text-center">Let's Select player to Create a Team</h2>
@@ -23,10 +24,13 @@
         <section class="mt-10 mx-auto">
             <div>
                 <div class="flex">
+                    <!-- player card -->
+
                     <div class="grid grid-cols-3 gap-4 mx-20">
+                        <!-- card 1  -->
                         <div class="bg-black border border-indigo-200">
                              <div>
-                                 <img src="image/kohli-1.jpg" alt="">
+                                 <img class="" src="image/kohli-1.jpg" alt="">
                              </div>
                              <div class="text-center">
                                  <h1 class="text-4xl text-white font-semibold pt-5">Virat Kohli</h1>
@@ -34,9 +38,10 @@
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">750 Run</p>
                                  </div>
-                                 <button class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit"> Select  </button>
-                             </div>
+                                 <button id="btn-kohli" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                            </div>
                         </div>
+                        <!-- card 2 -->
                         <div class="bg-black border border-indigo-200">
                              <div>
                                  <img src="image/martin Guptil.jpg" alt="">
@@ -47,22 +52,24 @@
                                      <p class="text-white">30 Match</p>
                                      <p class="text-white">700 Run</p>
                                  </div>
-                                 <button class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit"> Select  </button>
+                                 <button id="btn-guptil" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
+                        <!-- card 3 -->
                         <div class="bg-black border border-indigo-200">
                              <div>
                                  <img src="image/mashrafee.jpg.webp" alt="">
                              </div>
                              <div class="text-center">
-                                 <h1 class="text-4xl text-white font-semibold pt-5">mashrafee-Bin-Murtaza</h1>
+                                 <h1 class="text-4xl text-white font-semibold pt-5">Mashrafee-Bin-Murtaza</h1>
                                  <div class="flex justify-center space-x-5 pt-5 pb-5">
                                      <p class="text-white">30 Match</p>
                                      <p class="text-white">650 Run</p>
                                  </div>
-                                 <button class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit"> Select  </button>
+                                 <button id="btn-mashrafee" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
+                        <!-- card 4  -->
                         <div class="bg-black border border-indigo-200 ">
                              <div>
                                  <img src="image/mcullum.webp" alt="">
@@ -73,9 +80,10 @@
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">800 Run</p>
                                  </div>
-                                 <button class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit"> Select  </button>
+                                 <button id="btn-mccullum" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
+                        <!-- card 5  -->
                         <div class="bg-black border border-indigo-200">
                              <div>
                                  <img src="image/ms-dhoni.jpg" alt="">
@@ -86,9 +94,10 @@
                                      <p class="text-white">25 Match</p>
                                      <p class="text-white">750 Run</p>
                                  </div>
-                                 <button class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit"> Select  </button>
+                                 <button id="btn-dhoni" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
+                        <!-- card 6 -->
                         <div class="bg-black border border-indigo-200">
                              <div>
                                  <img src="image/Shakib-Al-Hasan-File.jpg" alt="">
@@ -99,49 +108,65 @@
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">650 Run</p>
                                  </div>
-                                 <button class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit"> Select  </button>
+                                 <button id="btn-sakib" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                      </div>
                     <div class="flex flex-col">
+
+                        <!-- selected five area -->
+
                         <div class=" mx-20 bg-black   px-2 py-10 border border-indigo-200 ">
                             <h1 class="text-4xl text-white font-semibold text-center underline">Selected-V</h1> 
                             <br>
-                            <ul>
-                                <li class="text-2xl text-white">1. <span> </span> </li>
-                                <li class="text-2xl text-white">2. <span> </span> </li>
-                                <li class="text-2xl text-white">3. <span> </span></li>
-                                <li class="text-2xl text-white">4. <span> </span></li>
-                                <li class="text-2xl text-white">5. <span> </span></li>
-                            </ul>
+                            <div class="overflow-x-auto">
+                                <table class="table w-full">
+                                  <!-- head -->
+                                  <tbody id="selected-player">
+                                   
+                                  </tbody>
+                                </table>
+                              </div>
                         </div>
+
+                       <!--  budget area  -->
                          <div class="mx-20 bg-black mt-10  px-5 py-10 border border-indigo-200">
                             <h1 class="text-4xl text-white text-center font-semibold underline">Budget</h1>
                             <br>
                             
-                           
+                           <!-- per player  -->
+
                             <div class="mt-5">
                                 <p class="text-white text-2xl ">Per Player : <input class="w-20 text-black  "
            
                                 type="text" value="">
                             </div>
+                            <!-- calculate button  -->
+
                              <div class="flex justify-center"><button class="bg-blue-700 text-xl  text-white px-20 py-2 mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
+
+                             <!-- player expences  -->
                              <label  class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">Player Expences : <span> </span> </label>
                             
-        
+                            <!-- coach section  -->
                             <div class="mt-5">
                                 <p class="text-white text-2xl ">Coach : <input class="w-20 text-black  "
            
                                 type="text" value="">
                             </div>
-        
+                            <!-- Manager Section  -->
+
                              <div class="mt-5">
                                 <p class="text-white text-2xl ">Manager : <input class="w-20 text-black  "
                              
                                     type="text" value=""></p>
                                 
                              </div>
+                             <!-- calculate total button  -->
+
                              <div class="flex justify-center"><button class="bg-blue-700 text-xl  text-white px-12 py-2 mt-5 rounded-xl block " type="submit"> Calculate Total  </button></div>
+
+                             <!-- total field  -->
         
                              <label  class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4 " for="inline-full-name">Total : <span> </span> </label>
         
@@ -151,6 +176,13 @@
             </div>
         </section>
     </main>
+
+    <footer class="mt-28 ">
+ <p class="text-white text-center">Copyright @ 2022 Rafin Hossain</p>
+    </footer>
+    <script src="script/utilities.js"></script>
+    <script src="script/disable.js"></script>
     
+    <script src="script/calculate.js"></script>
 </body>
 </html>
