@@ -3,9 +3,11 @@ const perPlayerField=document.getElementById('per-player');
 const perPlayerAmountString=perPlayerField.value ;
 const perPlayerAmount=parseFloat(perPlayerAmountString);
 
+
+
+
 const playerExpencesField=document.getElementById('player-expences');
-const playerExpencesAmountString=playerExpencesField.innerText;
-const playerExpencesAmount=parseFloat(playerExpencesAmountString);
+
 
 const totalPlayerAmount=perPlayerAmount * playerCount;
 

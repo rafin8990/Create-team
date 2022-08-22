@@ -27,6 +27,7 @@ function displayPlayerName(player){
        
 
     }
+
     playerCount++
 }
 
