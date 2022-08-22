@@ -1,5 +1,8 @@
 const selectedPlayer=[];
 
+let playerCount=0;
+
+
 
 function displayPlayerName(player){
     const selectedPlayerName=document.getElementById('selected-player')
@@ -17,11 +20,14 @@ function displayPlayerName(player){
             <td> ${playerName}</td>
             `
             selectedPlayerName.appendChild(tr)
+            
+        
         }
 
        
 
     }
+    playerCount++
 }
 
 function addToSelectArea(Element){  
@@ -29,4 +35,7 @@ function addToSelectArea(Element){
     selectedPlayer.push(addedPlayer);
     
     displayPlayerName(selectedPlayer)
+
+
+
 }
