@@ -14,7 +14,7 @@ document.getElementById('btn-kohli').addEventListener('click', function(event){
     disabledButton(event, 'btn-kohli' );
 
 })
-document.getElementById('btn-mashrafee').addEventListener('click', function(event){
+document.getElementById('btn-mashrafee'). addEventListener('click', function(event){
 disabledButton(event,'btn-mashrafee')
 })
 document.getElementById('btn-mccullum').addEventListener('click', function(event){
