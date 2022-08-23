@@ -4,6 +4,7 @@ let playerCount=0;
 
 
 
+
 function displayPlayerName(player){
     const selectedPlayerName=document.getElementById('selected-player')
     selectedPlayerName.innerHTML='';
@@ -11,6 +12,8 @@ function displayPlayerName(player){
 
         if(i>=5){
             alert('you can not add player anymore')
+            return;
+          
         }
         else{
             const playerName=selectedPlayer[i]
@@ -29,6 +32,10 @@ function displayPlayerName(player){
     }
 
     playerCount++
+
+    
+
+  
 }
 
 function addToSelectArea(Element){  
