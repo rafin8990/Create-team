@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black">
-    <header class=" py-28">
+    <header class=" py-28 sm:w-screen md:w-screen lg:w-screen">
         <div>
             <h1 class="text-6xl text-white font-bold text-center">Welcome To Cricket Club</h1>
         <h2 class="text-4xl text-white text-center">Let's Select player to Create a Team</h2>
@@ -23,10 +23,10 @@
     <main>
         <section class="mt-10 mx-auto">
             <div>
-                <div class="flex">
+                <div class="lg:flex sm:flex-col md:flex-col lg:flex-row">
                     <!-- player card -->
 
-                    <div class="grid grid-cols-3 gap-4 mx-20 w-9/12">
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-20 lg:w-9/12">
                         <!-- card 1  -->
                         <div class="bg-black border border-indigo-200">
                              <div>
@@ -112,7 +112,7 @@
                              </div>
                         </div>
                      </div>
-                    <div class="sm:block lg:flex flex-col mt-10 w-6/12">
+                    <div class="lg:flex lg:flex-col mt-10 sm:w-screen md:w-screen lg:w-6/12">
 
                         <!-- selected five area -->
 
@@ -143,7 +143,7 @@
                             </div>
                             <!-- calculate button  -->
 
-                             <div class="flex justify-center"><button id="btn-calculate" class="bg-blue-700 text-xl  text-white px-20 py-2 mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
+                             <div class="flex justify-center"><button id="btn-calculate" class="bg-blue-700 text-xl  text-white sm:px-16 sm:py-2 md:px-20 md:py-2 lg:px-20 lg:py-2 mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
 
                              <!-- player expences  -->
                              <label  class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">Player Expences : <span id="player-expences"> </span> </label>
