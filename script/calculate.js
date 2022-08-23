@@ -11,8 +11,13 @@ const playerExpencesField=document.getElementById('player-expences');
 
 
 const totalPlayerAmount=perPlayerAmount * playerCount;
+if(isNaN(totalPlayerAmount)){
+    alert('please enter a valid input')
+}
+else{
+    playerExpencesField.innerText=totalPlayerAmount;
+}
 
-playerExpencesField.innerText=totalPlayerAmount;
 
 
 })
@@ -38,8 +43,17 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     const totalPlayerAmount=perPlayerAmount * playerCount;
 
     const allTotal=totalPlayerAmount + coachAmount + managerAmount;
+    
 
+    if(isNaN(allTotal)){
+        alert('please enter a valid input')
+    }
+    else{
+        
     totalAmountField.innerText=allTotal;
+    }
+
+   
 
 
 })
