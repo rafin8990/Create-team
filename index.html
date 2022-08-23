@@ -11,7 +11,7 @@
 <body class="bg-black">
     <header class=" py-28 sm:w-screen md:w-screen lg:w-screen">
         <div>
-            <h1 class="text-6xl text-white font-bold text-center">Welcome To Cricket Club</h1>
+            <h1 class="text-6xl text-orange-500 font-bold text-center">Welcome To Cricket Club</h1>
         <h2 class="text-4xl text-white text-center">Let's Select player to Create a Team</h2>
         </div>
 
@@ -38,7 +38,7 @@
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">750 Run</p>
                                  </div>
-                                 <button id="btn-kohli" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-kohli" class="bg-orange-700 text-xl  text-white px-20 py-2 my-10  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                             </div>
                         </div>
                         <!-- card 2 -->
@@ -52,7 +52,7 @@
                                      <p class="text-white">30 Match</p>
                                      <p class="text-white">700 Run</p>
                                  </div>
-                                 <button id="btn-guptil" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-guptil" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                         <!-- card 3 -->
@@ -66,7 +66,7 @@
                                      <p class="text-white">30 Match</p>
                                      <p class="text-white">650 Run</p>
                                  </div>
-                                 <button id="btn-mashrafee" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-mashrafee" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                         <!-- card 4  -->
@@ -80,7 +80,7 @@
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">800 Run</p>
                                  </div>
-                                 <button id="btn-mccullum" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-mccullum" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                         <!-- card 5  -->
@@ -94,7 +94,7 @@
                                      <p class="text-white">25 Match</p>
                                      <p class="text-white">750 Run</p>
                                  </div>
-                                 <button id="btn-dhoni" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-dhoni" class="bg-orange-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                         <!-- card 6 -->
@@ -108,7 +108,7 @@
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">650 Run</p>
                                  </div>
-                                 <button id="btn-sakib" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-sakib" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                      </div>
@@ -117,10 +117,10 @@
                         <!-- selected five area -->
 
                         <div class=" mx-20 bg-black   px-2 py-10 border border-indigo-200 ">
-                            <h1 class="text-4xl text-white font-semibold text-center underline">Selected-V</h1> 
+                            <h1 class="text-2xl text-white font-semibold text-center underline">Selected- <span id="selected-number">0</span></h1> 
                             <br>
                             <div class="overflow-x-auto">
-                                <table class="table w-full">
+                                <table class="table table-normal w-full">
                                   <!-- head -->
                                   <tbody id="selected-player">
                                    
@@ -130,41 +130,41 @@
                         </div>
 
                        <!--  budget area  -->
-                         <div class="mx-20 bg-black mt-10  px-5 py-10 border border-indigo-200">
+                         <div class="mx-20 bg-black mt-10  px-5 py-10 border border-indigo-200 ">
                             <h1 id="total-player" class="text-4xl text-white text-center font-semibold underline">Budget</h1>
                             <br>
                             
                            <!-- per player  -->
 
                             <div class="mt-5">
-                                <p class="text-white text-2xl ">Per Player : <input id="per-player" class="w-9/12 text-black  "
+                                <p class="text-white text-2xl ">Per Player : <input placeholder="$Amount" id="per-player" class="w-9/12 text-black rounded-xl  "
            
                                 type="text" value="">
                             </div>
                             <!-- calculate button  -->
 
-                             <div class="flex justify-center"><button id="btn-calculate" class="bg-blue-700 text-xl  text-white sm:px-16 sm:py-2 md:px-20 md:py-2 lg:px-20 lg:py-2 mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
+                             <div class="flex justify-center"><button id="btn-calculate" class="bg-orange-700 text-xl  text-white px-20 py-2  mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
 
                              <!-- player expences  -->
                              <label  class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">Player Expences : <span id="player-expences"> </span> </label>
                             
                             <!-- coach section  -->
                             <div class="mt-5">
-                                <p class="text-white text-2xl ">Coach : <input id="coach" class="w-9/12 text-black  "
+                                <p class="text-white text-2xl ">Coach : <input placeholder="$Amount" id="coach" class="w-9/12 text-black rounded-xl "
            
                                 type="text" value="">
                             </div>
                             <!-- Manager Section  -->
 
                              <div class="mt-5">
-                                <p class="text-white text-2xl ">Manager : <input id="manager" class="w-9/12 text-black  "
+                                <p class="text-white text-2xl ">Manager : <input placeholder="$Amount" id="manager" class="w-9/12 text-black rounded-xl "
                              
                                     type="text" value=""></p>
                                 
                              </div>
                              <!-- calculate total button  -->
 
-                             <div id="calculate-total" class="flex justify-center"><button class="bg-blue-700 text-xl  text-white px-12 py-2 mt-5 rounded-xl block " type="submit"> Calculate Total  </button></div>
+                             <div id="calculate-total" class="flex justify-center"><button class="bg-orange-700 text-xl  text-white px-12 py-2 mt-5 rounded-xl block " type="submit"> Calculate Total  </button></div>
 
                              <!-- total field  -->
         

@@ -19,8 +19,8 @@ function displayPlayerName(player){
             const playerName=selectedPlayer[i]
             const tr =document.createElement('tr')
             tr.innerHTML=`
-            <td>${i + 1}</td>
-            <td> ${playerName}</td>
+            <td class="bg-black text-white">${i + 1}</td>
+            <td class="bg-black text-white"> ${playerName}</td>
             `
             selectedPlayerName.appendChild(tr)
             
@@ -41,6 +41,15 @@ function displayPlayerName(player){
 function addToSelectArea(Element){  
     const addedPlayer=Element.parentNode.children[0].innerText
     selectedPlayer.push(addedPlayer);
+    if(selectedPlayer.length>=6){
+        alert('you can not add player anymore')
+        return;
+        
+    }
+    else{
+        document.getElementById('selected-number').innerText=selectedPlayer.length;
+    }
+    
     
     displayPlayerName(selectedPlayer)
 
