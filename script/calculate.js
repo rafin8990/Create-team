@@ -1,6 +1,6 @@
 const perPlayerField=document.getElementById('per-player');
-perPlayerField.style.backgroundColor='black'
-perPlayerField.style.Color='white'
+perPlayerField.style.backgroundColor='cyan'
+perPlayerField.style.Color='gray'
 perPlayerField.style.border='indigo'
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
@@ -27,6 +27,17 @@ else{
 
 
 })
+
+
+const managerField=document.getElementById('manager');
+managerField.style.backgroundColor='cyan'
+managerField.style.Color='black'
+managerField.style.border='indigo'
+
+const coachField=document.getElementById('coach');
+coachField.style.backgroundColor='cyan'
+coachField.style.Color='black'
+coachField.style.border='indigo'
 
 document.getElementById('calculate-total').addEventListener('click', function(){
     const managerField=document.getElementById('manager');
