@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #header-line {
+            font-family: 'Berkshire Swash', cursive;
+        }
+    </style>
 </head>
 <body class="bg-black">
     <header class=" py-28 sm:w-screen md:w-screen lg:w-screen">
         <div>
-            <h1 class="text-6xl text-orange-500 font-bold text-center">Welcome To Cricket Club</h1>
+
+        <h1 id="header-line" class="text-6xl text-orange-500 font-bold text-center">Welcome To Cricket Club</h1>
         <h2 class="text-4xl text-white text-center">Let's Select player to Create a Team</h2>
         </div>
 
@@ -33,7 +42,7 @@
                                  <img class="" src="image/kohli-1.jpg" alt="">
                              </div>
                              <div class="text-center">
-                                 <h1 class="text-4xl text-white font-semibold pt-5">Virat Kohli</h1>
+                                 <h1 class="text-2xl text-white font-semibold pt-5">Virat Kohli</h1>
                                  <div class="flex justify-center space-x-5 pt-5 pb-5">
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">750 Run</p>
@@ -47,12 +56,12 @@
                                  <img src="image/martin Guptil.jpg" alt="">
                              </div>
                              <div class="text-center">
-                                 <h1 class="text-4xl text-white font-semibold pt-5">Martin Guptil</h1>
+                                 <h1 class="text-2xl text-white font-semibold pt-5">Martin Guptil</h1>
                                  <div class="flex justify-center space-x-5 pt-5 pb-5">
                                      <p class="text-white">30 Match</p>
                                      <p class="text-white">700 Run</p>
                                  </div>
-                                 <button id="btn-guptil" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-guptil" class="bg-orange-700 text-xl  text-white px-20 py-2 my-10  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                         <!-- card 3 -->
@@ -61,26 +70,26 @@
                                  <img src="image/mashrafee.jpg.webp" alt="">
                              </div>
                              <div class="text-center">
-                                 <h1 class="text-3xl text-white font-semibold pt-5">Mashrafee-Bin-Murtaza</h1>
+                                 <h1 class="text-2xl text-white font-semibold pt-5">Mashrafee-Bin-Murtaza</h1>
                                  <div class="flex justify-center space-x-5 pt-5 pb-5">
                                      <p class="text-white">30 Match</p>
                                      <p class="text-white">650 Run</p>
                                  </div>
-                                 <button id="btn-mashrafee" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-mashrafee" class="bg-orange-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                         <!-- card 4  -->
                         <div class="bg-black border border-indigo-200 ">
                              <div>
-                                 <img src="image/mcullum.webp" alt="">
+                                 <img src="image/mccullum.jpg" alt="">
                              </div>
                              <div class="text-center">
-                                 <h1 class="text-4xl text-white font-semibold pt-5">Brandon McCullum</h1>
+                                 <h1 class="text-2xl text-white font-semibold pt-5">Brandon McCullum</h1>
                                  <div class="flex justify-center space-x-5 pt-5 pb-5">
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">800 Run</p>
                                  </div>
-                                 <button id="btn-mccullum" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-mccullum" class="bg-orange-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                         <!-- card 5  -->
@@ -89,7 +98,7 @@
                                  <img src="image/ms-dhoni.jpg" alt="">
                              </div>
                              <div class="text-center">
-                                 <h1 class="text-4xl text-white font-semibold pt-5">MS-Dhoni</h1>
+                                 <h1 class="text-2xl text-white font-semibold pt-5">MS-Dhoni</h1>
                                  <div class="flex justify-center space-x-5 pt-5 pb-5">
                                      <p class="text-white">25 Match</p>
                                      <p class="text-white">750 Run</p>
@@ -103,12 +112,12 @@
                                  <img src="image/Shakib-Al-Hasan-File.jpg" alt="">
                              </div>
                              <div class="text-center">
-                                 <h1 class="text-4xl text-white font-semibold pt-5">Shakib-Al-Hasan</h1>
+                                 <h1 class="text-2xl text-white font-semibold pt-5">Shakib-Al-Hasan</h1>
                                  <div class="flex justify-center space-x-5 pt-5 pb-5">
                                      <p class="text-white">31 Match</p>
                                      <p class="text-white">650 Run</p>
                                  </div>
-                                 <button id="btn-sakib" class="bg-orange-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                                 <button id="btn-sakib" class="bg-orange-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                              </div>
                         </div>
                      </div>
@@ -137,34 +146,34 @@
                            <!-- per player  -->
 
                             <div class="mt-5">
-                                <p class="text-white text-2xl ">Per Player : <input placeholder="$Amount" id="per-player" class="w-9/12 text-black rounded-xl  "
+                                <p class="text-white text-2xl ">Per Player : <input placeholder="$Amount" id="per-player" class="w-9/12 text-white bg-black rounded-xl  "
            
                                 type="text" value="">
                             </div>
                             <!-- calculate button  -->
 
-                             <div class="flex justify-center"><button id="btn-calculate" class="bg-orange-700 text-xl  text-white px-20 py-2  mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
+                             <div class="flex justify-center"><button id="btn-calculate" class="bg-orange-700 text-xl  text-white px-20 py-2  my-10 rounded-xl block " type="submit"> Calculate  </button></div>
 
                              <!-- player expences  -->
                              <label  class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">Player Expences : <span id="player-expences"> </span> </label>
                             
                             <!-- coach section  -->
                             <div class="mt-5">
-                                <p class="text-white text-2xl ">Coach : <input placeholder="$Amount" id="coach" class="w-9/12 text-black rounded-xl "
+                                <p class="text-white text-2xl ">Coach : <input placeholder="$Amount" id="coach" class="w-9/12 text-white bg-black rounded-xl "
            
                                 type="text" value="">
                             </div>
                             <!-- Manager Section  -->
 
                              <div class="mt-5">
-                                <p class="text-white text-2xl ">Manager : <input placeholder="$Amount" id="manager" class="w-9/12 text-black rounded-xl "
+                                <p class="text-white text-2xl ">Manager : <input placeholder="$Amount" id="manager" class="w-9/12 text-white bg-black rounded-xl "
                              
                                     type="text" value=""></p>
                                 
                              </div>
                              <!-- calculate total button  -->
 
-                             <div id="calculate-total" class="flex justify-center"><button class="bg-orange-700 text-xl  text-white px-12 py-2 mt-5 rounded-xl block " type="submit"> Calculate Total  </button></div>
+                             <div id="calculate-total" class="flex justify-center"><button class="bg-orange-700 text-xl  text-white px-12 py-2 my-10 rounded-xl block " type="submit"> Calculate Total  </button></div>
 
                              <!-- total field  -->
         

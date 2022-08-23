@@ -1,7 +1,13 @@
+const perPlayerField=document.getElementById('per-player');
+perPlayerField.style.backgroundColor='black'
+perPlayerField.style.Color='white'
+perPlayerField.style.border='indigo'
+
 document.getElementById('btn-calculate').addEventListener('click', function(){
 const perPlayerField=document.getElementById('per-player');
 const perPlayerAmountString=perPlayerField.value ;
 const perPlayerAmount=parseFloat(perPlayerAmountString);
+
 
 
 
